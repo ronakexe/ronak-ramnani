@@ -30,7 +30,7 @@ export default function Projects() {
     <div className="container">
       <h1>My Projects</h1>
       <p className="projects-intro">
-        Here are some of the projects I've been working on. Each one represents
+        Here are some of the projects I&apos;ve been working on. Each one represents
         a learning experience and an opportunity to solve real-world problems.
       </p>
 

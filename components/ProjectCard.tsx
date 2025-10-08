@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface ProjectCardProps {
   title: string
   description: string
@@ -19,7 +21,7 @@ export default function ProjectCard({
     <div className="project-card">
       {imageUrl && (
         <div className="project-image">
-          <img src={imageUrl} alt={title} />
+          <Image src={imageUrl} alt={title} width={400} height={200} />
         </div>
       )}
       

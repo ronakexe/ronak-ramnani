@@ -6,7 +6,7 @@ export default function About() {
         <section className="about-section">
           <h2>My Story</h2>
           <p>
-            I'm a passionate developer with a love for creating innovative solutions
+            I&apos;m a passionate developer with a love for creating innovative solutions
             and beautiful user experiences. My journey in technology has been driven
             by curiosity and a desire to make a positive impact through code.
           </p>
@@ -41,7 +41,7 @@ export default function About() {
           <p>
             I specialize in full-stack web development, focusing on creating
             scalable, performant applications that provide excellent user experiences.
-            I'm always learning new technologies and staying up-to-date with
+            I&apos;m always learning new technologies and staying up-to-date with
             industry best practices.
           </p>
         </section>

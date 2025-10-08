@@ -6,8 +6,8 @@ export default function Contact() {
         <section className="contact-info">
           <h2>Let's Connect</h2>
           <p>
-            I'm always interested in hearing about new opportunities and exciting projects.
-            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            I&apos;m always interested in hearing about new opportunities and exciting projects.
+            Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
           </p>
           
           <div className="contact-methods">
