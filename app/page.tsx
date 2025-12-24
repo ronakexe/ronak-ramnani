@@ -15,9 +15,7 @@ export default function Page() {
             <SidebarGroupContent>
               <SidebarMenu>
                 <SidebarMenuItem>
-                  <SidebarMenuButton asChild>
-                    <Link href="/film">Films</Link>
-                  </SidebarMenuButton>
+                  <SidebarMenuButton render={<Link href="/film">Films</Link>} />
                 </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroupContent>
