@@ -20,7 +20,7 @@ export default function Page() {
         </div>
       </header>
       <main className="flex flex-1 flex-col gap-4 p-4">
-        {/* Your page content goes here */}
+        {/* Your page content goes here*/}
         <div>Your content here</div>
       </main>
     </SidebarInset>
