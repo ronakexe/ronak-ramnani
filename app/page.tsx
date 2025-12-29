@@ -5,35 +5,81 @@ import { SidebarProvider, Sidebar, SidebarInset, SidebarTrigger, SidebarHeader, 
 
 export default function Page() {
   return (
-    <SidebarProvider>
-      <Sidebar>
-        <SidebarHeader>
-          <h2 className="px-2 py-2 font-semibold">scat</h2>
-        </SidebarHeader>
-        <SidebarContent>
-          <SidebarGroup>
-            <SidebarGroupContent>
-              <SidebarMenu>
-                <SidebarMenuItem>
-                  <SidebarMenuButton render={<Link href="/film">Films</Link>} />
-                </SidebarMenuItem>
-              </SidebarMenu>
-            </SidebarGroupContent>
-          </SidebarGroup>
-        </SidebarContent>
-      </Sidebar>
-      <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
-          <SidebarTrigger className="-ml-1" />
-          <div className="flex flex-1 items-center gap-2">
-            <h1 className="text-lg font-semibold">Ronak Ramnani</h1>
-          </div>
-        </header>
-        <main className="flex flex-1 flex-col gap-4 p-4">
-          {/* Your page content goes here*/}
-          <div>Your content here</div>
-        </main>
-      </SidebarInset>
-    </SidebarProvider>
+  <div style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh", width: "100%" }}>
+    <Link href="/" style={{ position: "absolute", top: "20px", left: "20px", zIndex: 10 }}>
+      <img src="/assets/scat_logo.svg" alt="SCAT Logo" style={{ width: "40px", height: "40px", cursor: "pointer", filter: "brightness(0)" }} />
+    </Link>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+      <h1 style={{ fontSize: "100px", textAlign: "left", marginBottom: "2rem", fontWeight: "bold" }}>Ronak Ramnani</h1>
+      <div style={{ display: "flex", flexDirection: "row", gap: "3rem", justifyContent: "flex-start", alignItems: "center" }}>
+    <Link href="/projects" style={{ textDecoration: "none" }}>
+      <button
+        style={{
+          padding: "0",
+          backgroundColor: "#EB0000",
+          color: "white",
+          border: "none",
+          borderRadius: "50%",
+          fontWeight: "600",
+          fontSize: "25px",
+          cursor: "pointer",
+          height: "50px",
+          width: "200px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          boxShadow: "0 1px 2px rgba(16,30,54,0.10)"
+        }}
+      >
+        projects
+      </button>
+    </Link>
+    <Link href="/film" style={{ textDecoration: "none" }}>
+      <button
+        style={{
+          padding: "0",
+          backgroundColor: "#009E1A",
+          color: "white",
+          border: "none",
+          borderRadius: "50%",
+          fontWeight: "600",
+          fontSize: "25px",
+          cursor: "pointer",
+          height: "50px",
+          width: "200px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          boxShadow: "0 1px 2px rgba(16,30,54,0.10)"
+        }}
+      >
+        film
+      </button>
+    </Link>
+    <Link href="/things" style={{ textDecoration: "none" }}>
+      <button
+        style={{
+          padding: "0",
+          backgroundColor: "#0022FF",
+          color: "white",
+          border: "none",
+          borderRadius: "50%",
+          fontWeight: "600",
+          fontSize: "25px",
+          cursor: "pointer",
+          height: "50px",
+          width: "200px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          boxShadow: "0 1px 2px rgba(16,30,54,0.10)"
+        }}
+      >
+        things
+      </button>
+    </Link>
+      </div>
+    </div>
+  </div>
   )
 }

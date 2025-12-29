@@ -78,7 +78,6 @@
 @layer theme {
   :root, :host {
     --font-sans: var(--font-sans);
-    --color-blue-500: #3080ff;
     --color-black: #000;
     --spacing: .25rem;
     --container-xs: 20rem;
@@ -110,12 +109,6 @@
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-geist-mono);
-  }
-
-  @supports (color: lab(0% 0 0)) {
-    :root, :host {
-      --color-blue-500: lab(54.1736% 13.3369 -74.6839);
-    }
   }
 }
 
@@ -542,10 +535,6 @@
 
   .my-1 {
     margin-block: calc(var(--spacing) * 1);
-  }
-
-  .mt-4 {
-    margin-top: calc(var(--spacing) * 4);
   }
 
   .mt-auto {
@@ -1375,10 +1364,6 @@
     color: var(--background);
   }
 
-  .text-blue-500 {
-    color: var(--color-blue-500);
-  }
-
   .text-card-foreground {
     color: var(--card-foreground);
   }
@@ -1515,6 +1500,10 @@
 
   .grayscale {
     --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+  }
+
+  .filter {
     filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
   }
 

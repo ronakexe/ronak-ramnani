@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/ronakr/SCAT/code/ronak-ramanni/app/film/page.tsx"],"sourcesContent":["export default function FilmPage() {\n  return (\n    <div style={{ \n      backgroundColor: \"#009E1A\", \n      minHeight: \"100vh\", \n      width: \"100%\",\n      display: \"flex\",\n      alignItems: \"center\",\n      justifyContent: \"center\"\n    }}>\n      <h1 style={{ color: \"white\", fontSize: \"48px\" }}>Film</h1>\n    </div>\n  )\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAI,OAAO;YACV,iBAAiB;YACjB,WAAW;YACX,OAAO;YACP,SAAS;YACT,YAAY;YACZ,gBAAgB;QAClB;kBACE,cAAA,8OAAC;YAAG,OAAO;gBAAE,OAAO;gBAAS,UAAU;YAAO;sBAAG;;;;;;;;;;;AAGvD"}}]
+}
