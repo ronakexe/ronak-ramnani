@@ -2,14 +2,20 @@
 
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 
 export default function Page() {
   const router = useRouter()
   const [expandingButton, setExpandingButton] = useState<string | null>(null)
   const [buttonPosition, setButtonPosition] = useState<{ x: number; y: number; width: number; height: number; color: string; expandedSize: number } | null>(null)
   const [isExpanded, setIsExpanded] = useState(false)
+  const [logoVisible, setLogoVisible] = useState(false)
   const buttonRefs = useRef<{ [key: string]: HTMLButtonElement | null }>({})
+
+  useEffect(() => {
+    // Trigger logo animation on mount
+    setLogoVisible(true)
+  }, [])
 
   const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>, href: string, color: string) => {
     e.preventDefault()
@@ -40,8 +46,8 @@ export default function Page() {
     setButtonPosition({
       x: centerX,
       y: centerY,
-      width: rect.width,
-      height: rect.height,
+      width: 10, // Start from a very small size to feel like it's coming from the button
+      height: 10, // Start from a very small size to feel like it's coming from the button
       color: color,
       expandedSize: expandedSize
     })
@@ -53,16 +59,21 @@ export default function Page() {
       setIsExpanded(true)
     }, 10)
     
-    // Navigate after animation completes (800ms to match transition duration)
+    // Navigate after animation completes (400ms to match transition duration)
     setTimeout(() => {
       router.push(href)
-    }, 800)
+    }, 400)
   }
 
   return (
   <div style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh", width: "100%", overflow: "hidden" }}>
     <Link href="/" style={{ position: "absolute", top: "20px", left: "20px", zIndex: 10 }}>
-      <img src="/assets/scat_logo.svg" alt="SCAT Logo" style={{ width: "30px", height: "30px", cursor: "pointer", filter: "brightness(0)" }} />
+      <img 
+        src="/assets/scat_logo.svg" 
+        alt="SCAT Logo" 
+        className={logoVisible ? "logo-animate-in" : "logo-hidden"}
+        style={{ width: "30px", height: "30px", cursor: "pointer", filter: "brightness(0)" }} 
+      />
     </Link>
     
     {/* Expanding overlay */}
@@ -79,7 +90,7 @@ export default function Page() {
           borderRadius: "50%",
           transform: "translate(-50%, -50%)",
           zIndex: 9999,
-          transition: "width 0.8s ease-out, height 0.8s ease-out",
+          transition: "width 0.4s ease-out, height 0.4s ease-out",
           pointerEvents: "none"
         }}
       />
@@ -107,7 +118,7 @@ export default function Page() {
             alignItems: "center",
             justifyContent: "center",
             boxShadow: "0 1px 2px rgba(16,30,54,0.10)",
-            transition: "opacity 0.3s ease-out"
+            transition: "opacity 0.2s ease-out"
           }}
         >
           <span className={expandingButton === "/projects" ? "fade-out" : ""}>projects</span>
@@ -131,7 +142,7 @@ export default function Page() {
             alignItems: "center",
             justifyContent: "center",
             boxShadow: "0 1px 2px rgba(16,30,54,0.10)",
-            transition: "opacity 0.3s ease-out"
+            transition: "opacity 0.2s ease-out"
           }}
         >
           <span className={expandingButton === "/film" ? "fade-out" : ""}>film</span>
@@ -155,7 +166,7 @@ export default function Page() {
             alignItems: "center",
             justifyContent: "center",
             boxShadow: "0 1px 2px rgba(16,30,54,0.10)",
-            transition: "opacity 0.3s ease-out"
+            transition: "opacity 0.2s ease-out"
           }}
         >
           <span className={expandingButton === "/things" ? "fade-out" : ""}>things</span>
