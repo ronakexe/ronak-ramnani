@@ -1,7 +1,7 @@
 module.exports = [
 "[project]/app/favicon.ico (static in ecmascript, tag client)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/favicon.a8d0fe8f.ico");}),
+__turbopack_context__.v("/_next/static/media/favicon.9fa21756.ico");}),
 "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 

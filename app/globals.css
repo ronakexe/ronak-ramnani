@@ -124,3 +124,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

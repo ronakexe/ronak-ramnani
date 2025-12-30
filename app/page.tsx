@@ -7,11 +7,11 @@ export default function Page() {
   return (
   <div style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh", width: "100%" }}>
     <Link href="/" style={{ position: "absolute", top: "20px", left: "20px", zIndex: 10 }}>
-      <img src="/assets/scat_logo.svg" alt="SCAT Logo" style={{ width: "40px", height: "40px", cursor: "pointer", filter: "brightness(0)" }} />
+      <img src="/assets/scat_logo.svg" alt="SCAT Logo" style={{ width: "30px", height: "30px", cursor: "pointer", filter: "brightness(0)" }} />
     </Link>
     <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
       <h1 style={{ fontSize: "100px", textAlign: "left", marginBottom: "2rem", fontWeight: "bold" }}>Ronak Ramnani</h1>
-      <div style={{ display: "flex", flexDirection: "row", gap: "3rem", justifyContent: "flex-start", alignItems: "center" }}>
+      <div className="button-container">
     <Link href="/projects" style={{ textDecoration: "none" }}>
       <button
         style={{

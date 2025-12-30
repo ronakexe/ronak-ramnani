@@ -38,3 +38,11 @@ Import traces:
 [00:46:31.628] Server  LOG     ✓ Compiled in 52ms
 [00:46:37.965] Server  LOG     ✓ Compiled in 42ms
 [00:46:40.100] Server  LOG     ✓ Compiled in 27ms
+[00:49:37.684] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[11:24:00.338] Server  LOG     ✓ Compiled in 31ms
+[11:24:01.388] Server  LOG     ✓ Compiled in 28ms
+[11:25:20.749] Server  LOG     ✓ Compiled in 35ms
+[12:59:11.844] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:59:17.447] Server  LOG     ✓ Compiled in 161ms
+[13:00:25.994] Server  LOG     ✓ Compiled in 99ms
+[13:00:26.771] Server  LOG     ✓ Compiled in 33ms
