@@ -125,6 +125,19 @@
   }
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-heading {
+  font-size: 100px;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
 .button-container {
   display: flex;
   flex-direction: row;
@@ -134,8 +147,23 @@
 }
 
 @media (max-width: 768px) {
+  .content-container {
+    align-items: center;
+  }
+  
+  .main-heading {
+    font-size: 48px;
+    text-align: center;
+  }
+  
   .button-container {
     flex-direction: column;
     gap: 1.5rem;
+    align-items: center;
   }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
 }
