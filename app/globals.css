@@ -196,3 +196,19 @@
 .film-bar-scroll::-webkit-scrollbar {
   display: none;
 }
+
+@media (max-width: 768px) {
+  .film-video-description-container {
+    flex-direction: column !important;
+  }
+  
+  .film-video-wrapper {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+  }
+  
+  .film-description-wrapper {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+  }
+}

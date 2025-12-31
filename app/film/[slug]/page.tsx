@@ -51,13 +51,13 @@ export default function FilmDetailPage({ params }: FilmDetailPageProps) {
         </h1>
 
         {/* Video and description section */}
-        <div style={{
+        <div className="film-video-description-container" style={{
           display: "flex",
           gap: "40px",
           alignItems: "flex-start",
         }}>
           {/* Video embed */}
-          <div style={{
+          <div className="film-video-wrapper" style={{
             flex: "1 1 60%",
             backgroundColor: "rgba(0, 0, 0, 0.3)",
             aspectRatio: "16/9",
@@ -69,7 +69,7 @@ export default function FilmDetailPage({ params }: FilmDetailPageProps) {
           </div>
 
           {/* Description */}
-          <div style={{
+          <div className="film-description-wrapper" style={{
             flex: "1 1 40%",
             color: "white",
             fontSize: "16px",
