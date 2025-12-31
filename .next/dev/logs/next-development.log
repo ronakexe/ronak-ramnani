@@ -5,3 +5,55 @@
 [00:11:56.401] Server  LOG     ✓ Compiled in 34ms
 [00:21:51.314] Server  LOG     ✓ Compiled in 37ms
 [00:21:52.379] Server  LOG     ✓ Compiled in 31ms
+[06:24:04.173] Server  LOG     ✓ Compiled in 149ms
+[06:34:41.474] Browser WARN    Image with src "http://localhost:3000/assets/film-icons/failed-comic-icon.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:34:41.474] Browser WARN    Image with src "http://localhost:3000/assets/film-icons/double-trouble-icon.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:34:41.474] Browser WARN    Image with src "http://localhost:3000/assets/film-icons/human-error-icon.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:34:41.474] Browser WARN    Image with src "http://localhost:3000/assets/film-icons/sidewalk-jimmy-icon.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:34:41.474] Browser WARN    Image with src "http://localhost:3000/assets/film-icons/supernova-icon.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:35:55.198] Server  LOG     ✓ Compiled in 73ms
+[06:37:31.692] Server  LOG     ✓ Compiled in 37ms
+[06:37:47.141] Server  LOG     ✓ Compiled in 32ms
+[06:38:55.080] Server  LOG     ✓ Compiled in 36ms
+[06:39:14.580] Server  LOG     ✓ Compiled in 32ms
+[06:39:31.815] Server  LOG     ✓ Compiled in 33ms
+[06:41:14.604] Server  LOG     ✓ Compiled in 35ms
+[06:41:25.533] Server  LOG     ✓ Compiled in 31ms
+[06:41:26.535] Browser ERROR   uncaughtError: ReferenceError: ThumbnailContainer is not defined
+[06:41:45.712] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:41:45.798] Server  LOG     ✓ Compiled in 57ms
+[06:41:45.956] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:42:29.508] Server  LOG     ✓ Compiled in 52ms
+[06:43:53.559] Server  LOG     ✓ Compiled in 31ms
+[06:45:30.596] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:46:30.213] Server  LOG     ✓ Compiled in 33ms
+[06:46:56.731] Server  LOG     ✓ Compiled in 31ms
+[06:49:06.039] Server  LOG     ✓ Compiled in 29ms
+[06:49:29.767] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:51:05.413] Server  LOG     ✓ Compiled in 33ms
+[06:51:11.709] Server  LOG     ✓ Compiled in 31ms
+[06:51:15.294] Server  LOG     ✓ Compiled in 29ms
+[06:52:06.952] Server  LOG     ✓ Compiled in 28ms
+[06:52:24.861] Server  LOG     ✓ Compiled in 28ms
+[06:52:35.717] Server  LOG     ✓ Compiled in 30ms
+[06:52:38.932] Server  LOG     ✓ Compiled in 32ms
+[06:53:02.565] Server  LOG     ✓ Compiled in 29ms
+[06:53:35.891] Server  LOG     ✓ Compiled in 32ms
+[06:53:57.574] Server  LOG     ✓ Compiled in 27ms
+[06:55:42.368] Server  LOG     ✓ Compiled in 32ms
+[06:55:45.747] Server  LOG     ✓ Compiled in 27ms
+[06:55:47.923] Server  LOG     ✓ Compiled in 22ms
+[06:55:48.980] Browser ERROR   uncaughtError: ReferenceError: VideoEmbed is not defined
+[06:55:55.330] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:57:59.124] Server  LOG     ✓ Compiled in 48ms
+[06:58:20.773] Server  LOG     ✓ Compiled in 29ms
+[06:58:44.460] Server  LOG     ✓ Compiled in 35ms
+[06:59:02.700] Server  LOG     ✓ Compiled in 27ms
+[07:00:20.419] Browser WARN    Image with src "http://localhost:3000/assets/film-icons/failed-comic-icon.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:00:20.419] Browser WARN    Image with src "http://localhost:3000/assets/film-icons/double-trouble-icon.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:00:20.419] Browser WARN    Image with src "http://localhost:3000/assets/film-icons/human-error-icon.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:00:20.419] Browser WARN    Image with src "http://localhost:3000/assets/film-icons/sidewalk-jimmy-icon.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:00:20.419] Browser WARN    Image with src "http://localhost:3000/assets/film-icons/supernova-icon.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:01:59.289] Server  LOG     ✓ Compiled in 32ms
+[07:02:18.835] Server  LOG     ✓ Compiled in 32ms
+[07:02:55.861] Server  LOG     ✓ Compiled in 28ms

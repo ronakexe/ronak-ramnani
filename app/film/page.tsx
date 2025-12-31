@@ -1,4 +1,8 @@
+"use client"
+
 import Link from "next/link"
+import { films } from "@/lib/films"
+import Image from "next/image"
 
 export default function FilmPage() {
   return (
@@ -16,12 +20,37 @@ export default function FilmPage() {
       <div style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fill, 200px)",
-        gridAutoRows: "200px",
         gap: "50px",
         width: "100%",
         paddingTop: "60px"
       }}>
-        {/* Grid cells are created automatically as items are added */}
+        {films.map((film) => (
+          <Link 
+            key={film.slug} 
+            href={`/film/${film.slug}`}
+            style={{
+              display: "block",
+              width: "200px",
+              cursor: "pointer",
+              transition: "transform 0.2s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.05)"
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)"
+            }}
+          >
+            <Image
+              src={film.iconPath}
+              alt={film.title}
+              width={200}
+              height={0}
+              style={{ width: "200px", height: "auto" }}
+              unoptimized
+            />
+          </Link>
+        ))}
       </div>
     </div>
   )
