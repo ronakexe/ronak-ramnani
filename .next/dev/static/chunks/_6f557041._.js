@@ -54,8 +54,8 @@ function Page() {
         setButtonPosition({
             x: centerX,
             y: centerY,
-            width: 10,
-            height: 10,
+            width: 15,
+            height: 5,
             color: color,
             expandedSize: expandedSize
         });
@@ -115,13 +115,13 @@ function Page() {
                     position: "fixed",
                     left: `${buttonPosition.x}px`,
                     top: `${buttonPosition.y}px`,
-                    width: isExpanded ? `${buttonPosition.expandedSize}px` : `${buttonPosition.width}px`,
-                    height: isExpanded ? `${buttonPosition.expandedSize}px` : `${buttonPosition.height}px`,
+                    width: isExpanded ? `${buttonPosition.expandedSize * 1.8}px` : `${buttonPosition.width}px`,
+                    height: isExpanded ? `${buttonPosition.expandedSize * 0.6}px` : `${buttonPosition.height}px`,
                     backgroundColor: buttonPosition.color,
                     borderRadius: "50%",
                     transform: "translate(-50%, -50%)",
                     zIndex: 9999,
-                    transition: "width 0.4s ease-out, height 0.4s ease-out",
+                    transition: "width 0.4s ease-in, height 0.4s ease-in",
                     pointerEvents: "none"
                 }
             }, void 0, false, {
